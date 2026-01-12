@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Refresh your space with our latest furniture collection. Shop home store, electronics, and more with peace of mind.">
+    <title>Amazon Clone - Refresh Your Space</title>
+
+    <!-- Bootstrap 5 CSS (Minified for speed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- 1. DESKTOP (Large Screens: 992px se upar) -->
+    <link rel="preload" as="image" href="assets/hero-desktop-image.webp" media="(min-width: 992px)">
+
+    <!-- 2. TABLET (Medium Screens: 768px se lekar 991px tak) -->
+    <link rel="preload" as="image" href="assets/hero_tab_chair.webp" media="(min-width: 768px) and (max-width: 991px)">
+
+    <!-- 3. MOBILE (Small Screens: 767px se neeche) -->
+    <link rel="preload" as="image" href="assets/hero_mobile_chair.webp" media="(max-width: 767px)">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-bottom py-2 sticky-top">
+        <div class="container-fluid px-lg-4">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-6 col-md-2">
+                    <a href="#" aria-label="Amazon Homepage">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"
+                            width="100" height="30">
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggler (Visible only on mobile) -->
+                <div class="col-6 d-md-none text-end">
+                    <button class="btn btn-outline-dark border-0"><i class="bi bi-list fs-3"></i></button>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="col-md-6 d-none d-md-block">
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0">All</span>
+                            <input class="form-control border-start-0 border-end-0" type="search"
+                                placeholder="Search Amazon" aria-label="Search">
+                            <button class="btn btn-warning text-white" type="submit" aria-label="Search Button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Icons -->
+                <div class="col-md-4 d-none d-md-flex justify-content-end align-items-center gap-3">
+                    <a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i> EN</a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="bi bi-person"></i> Account</a>
+                    <a href="#" class="text-dark text-decoration-none"><i class="bi bi-cart3"></i> Cart</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section ">
+            <div class="container">
+                <!-- Text Content -->
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">Refresh your space</h1>
+                    <p class="lead mb-4 text-secondary">Shop the Home Store for the latest trends.</p>
+                    <a href="#" class="btn btn-warning btn-lg text-white px-4">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Pills Section -->
+        <section class="container py-5">
+            <div class="d-flex flex-wrap justify-content-center gap-3" role="navigation" aria-label="Categories">
+                <a href="#" class="cat-pill"><i class="bi bi-gift me-2"></i>Gift Ideas</a>
+                <a href="#" class="cat-pill active"><i class="bi bi-controller me-2"></i>Toys & Games</a>
+                <a href="#" class="cat-pill"><i class="bi bi-book me-2"></i>Books</a>
+                <a href="#" class="cat-pill"><i class="bi bi-ticket-perforated me-2"></i>Vouchers</a>
+                <a href="#" class="cat-pill"><i class="bi bi-pc-display me-2"></i>PC & Games</a>
+                <a href="#" class="cat-pill"><i class="bi bi-plug me-2"></i>Electronics</a>
+                <a href="#" class="cat-pill"><i class="bi bi-stars me-2"></i>Beauty</a>
+            </div>
+        </section>
+
+        <!-- Features / Marketing Section -->
+        <section class="container py-5 mb-5">
+            <div class="row align-items-center">
+                <!-- Text Block -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Peace of mind with every international order</h2>
+                    <p class="text-secondary mb-4">We are displaying products that ship to your location. You can select
+                        a different location in the menu besides.</p>
+                    <a href="#" class="btn btn-warning text-white px-4">Learn More</a>
+                </div>
+
+                <!-- Product Cards Grid -->
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <!-- Card 1 -->
+                        <div class="col-md-4 col-6">
+                            <div class="card border-0 rounded-4 overflow-hidden h-100 bg-dark text-white">
+                                <picture>
+                                    <source srcset="assets/books.webp" type="image/webp">
+                                    <img src="assets/books.png" alt="Amazon Basics books" class="card-img opacity-75"
+                                        width="300" height="300" loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title fs-6">Amazon Basics</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4 col-6">
+                            <div class="card border-0 rounded-4 overflow-hidden h-100 bg-dark text-white">
+                                <picture>
+                                    <source srcset="assets/bags.webp" type="image/webp">
+                                    <img src="assets/bags.png" alt="Fashion Bag" class="card-img opacity-75" width="300"
+                                        height="300" loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title fs-6">Discover More &gt;</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card border-0 rounded-4 overflow-hidden h-100 bg-dark text-white">
+                                <picture>
+                                    <source srcset="assets/home_decoretion.webp" type="image/webp">
+                                    <img src="assets/home_decoretion.png" alt="Home Decor" class="card-img opacity-75"
+                                        width="300" height="300" loading="lazy">
+                                </picture>
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title fs-6">Explore Home Decor</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- NEW SECTION: Top Sellers in Books -->
+        <!-- ========================================= -->
+        <section class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Top Sellers in <span
+                        class="text-warning position-relative d-inline-block">Books
+                        <!-- Simple CSS Smile/Underline effect -->
+                        <svg viewBox="0 0 100 20" class="position-absolute start-0 w-100"
+                            style="bottom: -10px; height: 10px; fill: none; stroke: #ff9900; stroke-width: 3;">
+                            <path d="M5 5 Q 50 20 95 5" />
+                        </svg>
+                    </span></h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Book Card 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <!-- Rating Badge -->
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.8
+                        </div>
+
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/journey-toward-book.webp" type="image/webp">
+                                <img src="assets/journey-toward-book.png" alt="Journey Toward Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Journey Toward</h5>
+                            <p class="card-text text-secondary small mb-2">Written: Suzanne Stabile</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.5
+                        </div>
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/love-every-day.webp" type="image/webp">
+                                <img src="assets/love-every-day.png" alt="Love Every Day Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Love Every Day</h5>
+                            <p class="card-text text-secondary small mb-2">Written: Writer Two</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.9
+                        </div>
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/becoming-the-one.webp" type="image/webp">
+                                <img src="assets/becoming-the-one.png" alt="Becoming The One Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Becoming The One</h5>
+                            <p class="card-text text-secondary small mb-2">Written: G. Reviewer</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.7
+                        </div>
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/build-the-life.webp" type="image/webp">
+                                <img src="assets/build-the-life.png" alt="Becoming The One Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Becoming The One</h5>
+                            <p class="card-text text-secondary small mb-2">Written: G. Reviewer</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book Card 5 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <!-- Rating Badge -->
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.8
+                        </div>
+
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/journey-toward-book.webp" type="image/webp">
+                                <img src="assets/journey-toward-book.png" alt="Journey Toward Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Journey Toward</h5>
+                            <p class="card-text text-secondary small mb-2">Written: Suzanne Stabile</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 6 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.5
+                        </div>
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/love-every-day.webp" type="image/webp">
+                                <img src="assets/love-every-day.png" alt="Love Every Day Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Love Every Day</h5>
+                            <p class="card-text text-secondary small mb-2">Written: Writer Two</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 7 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.9
+                        </div>
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/becoming-the-one.webp" type="image/webp">
+                                <img src="assets/becoming-the-one.png" alt="Becoming The One Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Becoming The One</h5>
+                            <p class="card-text text-secondary small mb-2">Written: G. Reviewer</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 8 -->
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 border border-light shadow-sm book-card p-3">
+                        <div class="rating-badge bg-warning text-white small px-2 py-1 rounded-1 fw-bold">
+                            <i class="bi bi-star-fill"></i> 4.7
+                        </div>
+                        <div class="text-center mb-3 mt-2">
+                            <picture>
+                                <source srcset="assets/build-the-life.webp" type="image/webp">
+                                <img src="assets/build-the-life.png" alt="Becoming The One Book Cover"
+                                    class="img-fluid rounded" width="150" height="220" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card-body p-0 pt-2">
+                            <h5 class="card-title fs-6 fw-bold mb-1">Becoming The One</h5>
+                            <p class="card-text text-secondary small mb-2">Written: G. Reviewer</p>
+                            <a href="#" class="text-warning text-decoration-none small fw-bold stretched-link">Read More
+                                <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- NEW SECTION: Amazing Deals (Horizontal Scroll) -->
+        <!-- ========================================= -->
+        <section class="container py-5 position-relative">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold fs-2">Explore our Amazing <span
+                        class="text-warning position-relative d-inline-block">Deals
+                        <!-- Amazon Smile SVG -->
+                        <svg viewBox="0 0 100 20" class="position-absolute start-0 w-100"
+                            style="bottom: -10px; height: 10px; fill: none; stroke: #ff9900; stroke-width: 3;">
+                            <path d="M5 5 Q 50 20 95 5" />
+                        </svg>
+                    </span></h2>
+            </div>
+
+            <!-- Scroll Buttons -->
+            <button
+                class="btn btn-light shadow rounded-circle position-absolute top-50 start-0 translate-middle-y d-none d-lg-block z-1 ms-2"
+                onclick="document.getElementById('deals-scroll').scrollBy({left: -300, behavior: 'smooth'})"
+                aria-label="Scroll Left">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button
+                class="btn btn-light shadow rounded-circle position-absolute top-50 end-0 translate-middle-y d-none d-lg-block z-1 me-2"
+                onclick="document.getElementById('deals-scroll').scrollBy({left: 300, behavior: 'smooth'})"
+                aria-label="Scroll Right">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
+            <!-- Horizontal Scroll Container -->
+            <div id="deals-scroll" class="d-flex overflow-auto gap-4 py-3 px-2 deals-wrapper"
+                style="scroll-behavior: smooth;">
+
+                <!-- Deal 1 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">14%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/camara.webp" type="image/webp">
+                            <img src="assets/camara.png" alt="Security Camera" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$45.00 <s class="text-muted small fw-normal ms-2">$52.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Home Security Camera</p>
+                    </div>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">26%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/deal-goggles.webp" type="image/webp">
+                            <img src="assets/deal-goggles.png" alt="VR Goggles" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$69.00 <s class="text-muted small fw-normal ms-2">$95.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Model 005X - Gaming Goggles</p>
+                    </div>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">15%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/deal-bottle.webp" type="image/webp">
+                            <img src="assets/deal-bottle.png" alt="Water Bottle" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$87.00 <s class="text-muted small fw-normal ms-2">$99.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Michael Water Bottle</p>
+                    </div>
+                </div>
+
+                <!-- Deal 4 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">10%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/deal-shoes.webp" type="image/webp">
+                            <img src="assets/deal-shoes.png" alt="Sport Shoes" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$78.00 <s class="text-muted small fw-normal ms-2">$87.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Nike Air Max Sport Shoes</p>
+                    </div>
+                </div>
+                <!-- Deal 5 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">14%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/camara.webp" type="image/webp">
+                            <img src="assets/camara.png" alt="Security Camera" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$45.00 <s class="text-muted small fw-normal ms-2">$52.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Home Security Camera</p>
+                    </div>
+                </div>
+
+                <!-- Deal 6 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">26%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/deal-goggles.webp" type="image/webp">
+                            <img src="assets/deal-goggles.png" alt="VR Goggles" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$69.00 <s class="text-muted small fw-normal ms-2">$95.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Model 005X - Gaming Goggles</p>
+                    </div>
+                </div>
+
+                <!-- Deal 7 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">15%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/deal-bottle.webp" type="image/webp">
+                            <img src="assets/deal-bottle.png" alt="Water Bottle" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$87.00 <s class="text-muted small fw-normal ms-2">$99.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Michael Water Bottle</p>
+                    </div>
+                </div>
+
+                <!-- Deal 8 -->
+                <div class="card border border-light shadow-sm rounded-4 flex-shrink-0 deal-card" style="width: 260px;">
+                    <span
+                        class="position-absolute top-0 start-0 bg-warning text-white small fw-bold px-3 py-1 rounded-top-left-4 rounded-bottom-right-1">10%
+                        OFF</span>
+                    <div class="p-4 text-center">
+                        <picture>
+                            <source srcset="assets/deal-shoes.webp" type="image/webp">
+                            <img src="assets/deal-shoes.png" alt="Sport Shoes" class="img-fluid" width="180"
+                                height="180" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="text-warning fw-bold">$78.00 <s class="text-muted small fw-normal ms-2">$87.00</s>
+                        </h5>
+                        <p class="card-text text-secondary small text-truncate">Nike Air Max Sport Shoes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- NEW SECTION: Gallery Grid (Masonry Style) -->
+        <!-- ========================================= -->
+        <section class="container pb-5 mb-5">
+            <div class="row g-4">
+
+                <!-- Column 1 -->
+                <div class="col-md-4 d-flex flex-column gap-4">
+                    <div class="gallery-card position-relative rounded-4 overflow-hidden h-50">
+                        <picture>
+                            <source srcset="assets/grid-sofa.webp" type="image/webp">
+                            <img src="assets/grid-sofa.png" alt="Home Decor Sofa"
+                                class="img-fluid w-100 h-100 object-fit-cover" loading="lazy">
+                        </picture>
+                        <div class="overlay-text position-absolute bottom-0 start-0 p-3 w-100 text-white">
+                            <span class="small fw-bold">Home Decor Items</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card position-relative rounded-4 overflow-hidden h-50">
+                        <picture>
+                            <source srcset="assets/watch.webp" type="image/webp">
+                            <img src="assets/watch.png" alt="Versatile Books"
+                                class="img-fluid w-100 h-100 object-fit-cover" loading="lazy">
+                        </picture>
+                        <div class="overlay-text position-absolute bottom-0 start-0 p-3 w-100 text-white">
+                            <span class="small fw-bold">Versatile Books</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-4 d-flex flex-column gap-4">
+                    <div class="gallery-card position-relative rounded-4 overflow-hidden h-50 bg-dark">
+                        <picture>
+                            <source srcset="assets/watch.webp" type="image/webp">
+                            <img src="assets/watch.png" alt="Accessories"
+                                class="img-fluid w-100 h-100 object-fit-cover opacity-75" loading="lazy">
+                        </picture>
+                        <div class="overlay-text position-absolute bottom-0 start-0 p-3 w-100 text-white">
+                            <span class="small fw-bold">Accessories</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card position-relative rounded-4 overflow-hidden h-50">
+                        <picture>
+                            <source srcset="assets/Gaming-Accessories.webp" type="image/webp">
+                            <img src="assets/Gaming-Accessories.png" alt="Gaming Accessories"
+                                class="img-fluid w-100 h-100 object-fit-cover" loading="lazy">
+                        </picture>
+                        <div class="overlay-text position-absolute bottom-0 start-0 p-3 w-100 text-white">
+                            <span class="small fw-bold">Gaming Accessories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-4 d-flex flex-column gap-4">
+                    <div class="gallery-card position-relative rounded-4 overflow-hidden h-50 bg-danger">
+                        <picture>
+                            <source srcset="assets/Gaming-Accessories.webp" type="image/webp">
+                            <img src="assets/Gaming-Accessories.png" alt="Yoga Accessories"
+                                class="img-fluid w-100 h-100 object-fit-cover" loading="lazy">
+                        </picture>
+                        <div class="overlay-text position-absolute bottom-0 start-0 p-3 w-100 text-white">
+                            <span class="small fw-bold">Yoga Accessories</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card position-relative rounded-4 overflow-hidden h-50">
+                        <picture>
+                            <source srcset="assets/grid-sofa.webp" type="image/webp">
+                            <img src="assets/grid-sofa.png" alt="Outdoor Tools"
+                                class="img-fluid w-100 h-100 object-fit-cover" loading="lazy">
+                        </picture>
+                        <div class="overlay-text position-absolute bottom-0 start-0 p-3 w-100 text-white">
+                            <span class="small fw-bold">Outdoor Tools</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- NEW FOOTER SECTION -->
+    <!-- ========================================= -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <!-- Footer Logo -->
+            <div class="text-center mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"
+                    width="120" style="filter: brightness(0) invert(1);">
+            </div>
+
+            <!-- Country List -->
+            <div class="d-flex flex-wrap justify-content-center gap-3 text-secondary small mb-5 text-uppercase">
+                <a href="#" class="text-decoration-none text-secondary">England</a>
+                <a href="#" class="text-decoration-none text-secondary">Bangladesh</a>
+                <a href="#" class="text-decoration-none text-secondary">India</a>
+                <a href="#" class="text-decoration-none text-secondary">France</a>
+                <a href="#" class="text-decoration-none text-secondary">Pakistan</a>
+                <a href="#" class="text-decoration-none text-secondary">Argentina</a>
+                <a href="#" class="text-decoration-none text-secondary">Brazil</a>
+                <a href="#" class="text-decoration-none text-secondary">Australia</a>
+                <a href="#" class="text-decoration-none text-secondary">Vietnam</a>
+                <a href="#" class="text-decoration-none text-secondary">Thailand</a>
+                <a href="#" class="text-decoration-none text-secondary">Philippines</a>
+                <a href="#" class="text-decoration-none text-secondary">Turkey</a>
+                <a href="#" class="text-decoration-none text-secondary">Uzbekistan</a>
+            </div>
+
+            <!-- Footer Links Columns -->
+            <div class="row text-center mb-5">
+                <div class="col-md-4 mb-3">
+                    <h6 class="text-warning fw-bold mb-3">Get To Know With Us</h6>
+                    <ul class="list-unstyled text-secondary small">
+                        <li><a href="#" class="text-decoration-none text-secondary">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Press Releases</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="text-warning fw-bold mb-3">Make Money With Us</h6>
+                    <ul class="list-unstyled text-secondary small">
+                        <li><a href="#" class="text-decoration-none text-secondary">Sell on Amazon</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Affiliate Program</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Advertise</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="text-warning fw-bold mb-3">Let Us Help You</h6>
+                    <ul class="list-unstyled text-secondary small">
+                        <li><a href="#" class="text-decoration-none text-secondary">Your Account</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Returns Centre</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Form Area -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="footerMessage" class="visually-hidden">Message</label>
+                            <textarea id="footerMessage" class="form-control rounded-1 border-0" rows="3"
+                                placeholder="Write Note..."></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="footerEmail" class="visually-hidden">Email</label>
+                            <h6 class="text-light small mb-2">Contact With Us</h6>
+                            <input type="email" id="footerEmail" class="form-control rounded-1 border-0 mb-2"
+                                placeholder="Enter Your Email Add...">
+                            <button class="btn btn-warning w-100 fw-bold text-white rounded-1">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center mt-5 pt-3
+             border-top border-secondary border-opacity-25">
+                <p class="text-secondary small mb-0">
+                    &copy; 1996-2026, Amazon.com, Inc. or its affiliates
+                </p>
+                <p class="copyright mb-0">
+                    &copy; 2026 <strong>Shivanand Yadav</strong>. All rights reserved. <br>
+                    <small class="text-secondary">
+                        Original layout design and assets from the <strong><u>
+                                nj575470</u></strong> Figma Community template. <br>
+                        <strong>This design is for portfolio and educational purposes only.</strong>
+                    </small>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
