@@ -23,9 +23,6 @@
     <!-- 3. MOBILE (Small Screens: 767px se neeche) -->
     <link rel="preload" as="image" href="assets/hero_mobile_chair.webp" media="(max-width: 767px)">
 
-    <link rel="stylesheet" href="style.css">
-
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,16 +34,26 @@
         <div class="container-fluid px-lg-4">
             <div class="row align-items-center">
                 <!-- Logo -->
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-2 text-start d-flex align-items-center gap-2">
                     <a href="#" aria-label="Amazon Homepage">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"
                             width="100" height="30">
                     </a>
+                    <select class="border-0 ps-1 bg-white" aria-label="Select Language">
+                        <option><a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i> EN(US)</a></option>
+                        <option><a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i> EN(IN)</a></option>
+                        <option><a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i>HINDI</a></option>
+                        <option><a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i> French</a></option>
+                        <option><a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i>Russian</a></option>
+                        <option><a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i> Spanish</a></option>
+                        <option><a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i>  Portuguese(Brazil)</a></option>
+                    </select>
                 </div>
 
                 <!-- Mobile Menu Toggler (Visible only on mobile) -->
                 <div class="col-6 d-md-none text-end">
                     <button class="btn btn-outline-dark border-0"><i class="bi bi-list fs-3"></i></button>
+                    
                 </div>
 
                 <!-- Search Bar -->
@@ -65,7 +72,8 @@
 
                 <!-- Icons -->
                 <div class="col-md-4 d-none d-md-flex justify-content-end align-items-center gap-3">
-                    <a href="#" class="text-dark text-decoration-none"><i class="bi bi-globe"></i> EN</a>
+                    
+                    <a href="#" class="text-dark text-decoration-none"><i class="bi bi-gear"></i> Settings</a>
                     <a href="#" class="text-dark text-decoration-none"><i class="bi bi-person"></i> Account</a>
                     <a href="#" class="text-dark text-decoration-none"><i class="bi bi-cart3"></i> Cart</a>
                 </div>
@@ -96,6 +104,11 @@
                 <a href="#" class="cat-pill"><i class="bi bi-pc-display me-2"></i>PC & Games</a>
                 <a href="#" class="cat-pill"><i class="bi bi-plug me-2"></i>Electronics</a>
                 <a href="#" class="cat-pill"><i class="bi bi-stars me-2"></i>Beauty</a>
+                <a href="#" class="cat-pill"><i class="bi bi-gift"></i>Gift Cards & top up</a>
+                <a href="#" class="cat-pill"><i class="bi bi-person-standing-dress"></i>Fashion</a>
+                <a href="#" class="cat-pill"><i class="bi bi-house-heart"></i>Home & garden</a>
+                <a href="#" class="cat-pill"><i class="bi bi-award"></i>best sellers</a>
+                <a href="#" class="cat-pill"><i class="bi bi-tags"></i>today’s deal</a>
             </div>
         </section>
 
