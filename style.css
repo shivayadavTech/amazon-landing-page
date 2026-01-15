@@ -91,9 +91,8 @@ body {
 }
 
 .cat-pill:hover {
-    background-color: #f8f9fa;
-    color: #000;
-    border-color: #bbb;
+    background-color: #f7aa1b;
+    color: #f0f0f0;
 }
 
 .cat-pill.active {
