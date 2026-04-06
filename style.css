@@ -9,7 +9,7 @@ body {
 :root {
     --amazon-orange: #ff9900;
     --amazon-dark: #232f3e;
-    --amazon-light-bg: #f2f4f8; /* Light grey background from image */
+    --amazon-light-bg: #f2f4f8; 
 }
 
 /* Custom Button Styling */
@@ -30,9 +30,10 @@ body {
     background-color: var(--amazon-light-bg);
     min-height: 500px; /* Adjust height based on preference */
     padding: 3rem 0;
-}/* Hero Section Styling */
+}
+/* Hero Section Styling */
 .hero-section {
-    width: 100%; /* Screen ki poori chaudai */
+    width: 100%; 
     width: 100vw; /* Viewport width (Force full width) */
     position: relative;
     left: 50%;
@@ -40,7 +41,6 @@ body {
     margin-left: -50vw;
     margin-right: -50vw;
     
-    /* Height badhayein taaki image badi dikhe (Figma jaisi) */
     min-height: 600px; 
 
     /* Background Setup */
@@ -67,9 +67,8 @@ body {
 @media (max-width: 767px) {
     .hero-section {
         min-height: 450px;
-        background-image: url('assets/hero_mobile_chair.webp');
-        background-position: center bottom; /* Chair mobile pe neeche dikhegi */
-        align-items: flex-start; /* Text thoda upar rahega */
+        background-image: url('assets/mobile-chair.png');
+        background-position: center bottom;
         padding-top: 40px;
     }
 }
@@ -189,10 +188,6 @@ body {
     max-width: 100%;
     height: auto;
 }
-
-/* ========================
-   Deals & Grid Updates
-   ======================== */
 
 /* Deals Scrollbar Hide */
 .deals-wrapper {
